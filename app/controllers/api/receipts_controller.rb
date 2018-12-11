@@ -2,7 +2,7 @@ class Api::ReceiptsController < ApplicationController
 
   def create
     response = HTTP
-      .headers(apiKey: "b6dac460ef5111e8989bebb60acaaa28")
+      .headers(apiKey: "")
       .post(
         "https://api.taggun.io/api/receipt/v1/simple/url", 
         form: {url: params[:url]}
