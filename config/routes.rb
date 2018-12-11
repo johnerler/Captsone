@@ -14,5 +14,9 @@ Rails.application.routes.draw do
 
     get "/user_groups" => "user_groups#index"
     get "/user_groups/:id" => "user_groups#show"
+
+    get "/receipts" => "receipts#index"
+    post "/receipts" => "receipts#create"
+
   end
 end

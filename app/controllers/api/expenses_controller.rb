@@ -1,6 +1,8 @@
 class Api::ExpensesController < ApplicationController
   def index
     @expense = Expense.all
+    # @expense = current_user.expenses
+
 
     render "index.json.jbuilder"
   end

@@ -5,3 +5,5 @@ json.amount expense.amount
 json.expense_category expense.expense_category
 json.user_group expense.user_group
 json.current_user expense.user
+json.total_expenses expense.total_expenses
+json.shared_expenses expense.shared_expenses.round(2)
