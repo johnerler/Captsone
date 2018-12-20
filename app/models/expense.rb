@@ -2,6 +2,8 @@ class Expense < ApplicationRecord
   belongs_to :user
   belongs_to :expense_category
   belongs_to :user_group
+
+  has_one_attached :receipt_image
   # belongs_to :current_user
 
   def total_expenses

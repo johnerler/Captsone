@@ -17,6 +17,9 @@ Rails.application.routes.draw do
 
     get "/receipts" => "receipts#index"
     post "/receipts" => "receipts#create"
+    post "/receipts/analyze" => "receipts#analyze"
+    post "/receipts/analyze_file" => "receipts#analyze_file"
+
 
   end
 end

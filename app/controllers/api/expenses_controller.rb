@@ -14,6 +14,7 @@ class Api::ExpensesController < ApplicationController
       amount: params["amount"],
       expense_category_id: params["expense_category_id"],
       user_group_id: params["user_group_id"],
+      receipt_image: params["receipt_image"],
       user_id: current_user.id
       )
     @expense.save
